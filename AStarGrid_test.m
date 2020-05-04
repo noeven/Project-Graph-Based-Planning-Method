@@ -1,16 +1,14 @@
-
 %% Define a small map
 map = false(10);
 
 % Add an obstacle
 map (1:5, 6) = true;
-%map (1:5, 8) = true;
-%map (7:8, 8) = true;
+
 start_coords = [6, 2];
 dest_coords  = [8, 9];
 
 %%
-[route, numExpanded] = AStarGrid(map, start_coords, dest_coords, true);
+[route, numExpanded] = AStarGrid (map, start_coords, dest_coords, false);
 
 
 
